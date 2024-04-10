@@ -7,8 +7,8 @@ public class ExperimentController : MonoBehaviour
 {
     public SceneChanger sceneChanger;
     private static ExperimentController Instance;
+    private bool experimentRunning = false;
 
-    // Start is called before the first frame update
     void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -18,11 +18,23 @@ public class ExperimentController : MonoBehaviour
         }
     }
 
+    public void StartExperiment(string name, string room) {
+        experimentRunning = true;
+        sceneChanger.ChangeScene(room);
+    }
+
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            sceneChanger.SetScene("Office");
+    void Update() {
+        if (experimentRunning) {
+            if (Input.GetKeyDown(KeyCode.RightArrow)) {
+                Debug.Log("Swapping scenes...");
+                if (SceneManager.GetActiveScene().name == "Office") {
+                    sceneChanger.ChangeScene("Forest");
+                } else {
+                    sceneChanger.ChangeScene("Office");
+                }
+            }
         }
     }
+
 }

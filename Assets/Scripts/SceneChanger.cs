@@ -18,13 +18,6 @@ public class SceneChanger : MonoBehaviour {
         }
     }
 
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            Debug.Log("Swapping scenes...");
-            ChangeScene("Forest");
-        }
-    }
-
     public void SetScene(String name) {
         SceneManager.LoadScene(name);
     }

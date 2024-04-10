@@ -9,8 +9,8 @@ public class CameraFader : MonoBehaviour
 {
     private GameObject FadeCanvas;
 
-    public bool active;
-    public bool fadeIn;
+    private bool active;
+    private bool fadeIn;
 
     private float fade;
     private CanvasGroup cg;
