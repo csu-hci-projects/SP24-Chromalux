@@ -123,6 +123,154 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &32605123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &32605124 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 32605123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &133120463
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &133120464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 133120463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207350306
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +382,220 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1001 &246032209
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &246032210 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 246032209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &249221205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &249221206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 249221205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &322982706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &322982707 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 322982706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &470426370
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +630,76 @@ Transform:
   - {fileID: 1028840081}
   m_Father: {fileID: 528754188}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &507526250
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &507526251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 507526250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &528754186
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +750,290 @@ Transform:
   - {fileID: 470426371}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -97.975, z: 0}
+--- !u!1001 &598670124
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &598670125 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 598670124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &656864658
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &656864659 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 656864658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &718089721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &718089722 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 718089721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &769273058
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &769273059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 769273058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &844181012
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +1242,216 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!1001 &896842856
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &896842857 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 896842856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &903007794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &903007795 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 903007794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1007821736
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1007821737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1007821736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1028840080
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +1660,150 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!1001 &1099469411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1099469412 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1099469411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1131032989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1131032990 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1131032989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1165697937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -791,6 +1861,442 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 744fdfc5e08624943b22ba3c3e353e07, type: 3}
+--- !u!1001 &1166891610
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1166891611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1166891610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1223676413
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1223676414 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1223676413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1296789912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1296789913 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1296789912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1329809380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1329809381 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1329809380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1589558275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1589558276 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1589558275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1653114773
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1653114774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1653114773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1701640096
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +2389,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1738476848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1738476849 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1738476848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1739880037
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,12 +2551,649 @@ Transform:
   m_GameObject: {fileID: 1739880037}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 6.64, y: 10.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1756870352
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1756870353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1756870352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1776764912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1776764913 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1776764912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1794995611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1794995612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1794995611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1819925285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1819925286}
+  m_Layer: 0
+  m_Name: Hedges
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1819925286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819925285}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.392593, y: 33.4769, z: -15.442539}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1776764913}
+  - {fileID: 1756870353}
+  - {fileID: 2011091863}
+  - {fileID: 1099469412}
+  - {fileID: 1794995612}
+  - {fileID: 1738476849}
+  - {fileID: 1223676414}
+  - {fileID: 1589558276}
+  - {fileID: 32605124}
+  - {fileID: 1166891611}
+  - {fileID: 1296789913}
+  - {fileID: 246032210}
+  - {fileID: 1932976578}
+  - {fileID: 2121188376}
+  - {fileID: 718089722}
+  - {fileID: 133120464}
+  - {fileID: 2066665333}
+  - {fileID: 598670125}
+  - {fileID: 1007821737}
+  - {fileID: 769273059}
+  - {fileID: 249221206}
+  - {fileID: 507526251}
+  - {fileID: 322982707}
+  - {fileID: 903007795}
+  - {fileID: 656864659}
+  - {fileID: 1913643089}
+  - {fileID: 1653114774}
+  - {fileID: 1131032990}
+  - {fileID: 1329809381}
+  - {fileID: 896842857}
+  m_Father: {fileID: 6583114533634165529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1913643088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1913643089 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1913643088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1932976577
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &1932976578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 1932976577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2011091862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.820001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &2011091863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 2011091862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2066665332
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &2066665333 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 2066665332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2121188375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1819925286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_Name
+      value: Hedge Clean Long Square Prefab (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+--- !u!4 &2121188376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e7fcc6380d6d0847a74794f0fa876fa, type: 3}
+  m_PrefabInstance: {fileID: 2121188375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6583114533634165528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1035,9 +3252,17 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8473cf0695112b34ab09bf14302d84f3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1709928068422388320, guid: a538be583139d134a975ec6a558a8d70, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1819925286}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a538be583139d134a975ec6a558a8d70, type: 3}
+--- !u!4 &6583114533634165529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1709928068422388320, guid: a538be583139d134a975ec6a558a8d70, type: 3}
+  m_PrefabInstance: {fileID: 6583114533634165528}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
