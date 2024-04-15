@@ -23,8 +23,8 @@ public class SetupUIController : MonoBehaviour
         UpdateButton();
     }
 
-    public void StartExperiment () {
-        controller.StartExperiment(username, room);
+    public void FinishSetup () {
+        controller.FinishSetup(username, room);
         gameObject.SetActive(false);
     }
     private void UpdateButton() {
