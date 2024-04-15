@@ -8,8 +8,6 @@ public class ActivityUI : MonoBehaviour
 {
     private Transform playercamera;
     private Transform basePanel;
-    private Button StartButton;
-    private TMP_Text StartButtonText;
 
     // Start is called before the first frame update
     void Start()
@@ -24,29 +22,43 @@ public class ActivityUI : MonoBehaviour
         transform.localPosition = transform.parent.InverseTransformPoint(playercamera.position) + new Vector3(0,0,1.3f);
     }
 
-    private void Clear() {
+    private void ClearPanels() {
         foreach (Transform child in basePanel)
             child.gameObject.SetActive(false);
     }
 
+    public Transform SwitchPanel(string panelName) {
+        Transform panel = basePanel.Find(panelName);
+
+        ClearPanels();
+        if (panel != null) panel.gameObject.SetActive(true);
+
+        return panel;
+    }
+
+    private Button tut_StartButton;
+    private TMP_Text tut_StartButtonText;
+    private bool tut_startButtonSet;
     public void Tutorial() {
-        Clear();
-        Transform tutorial1 = basePanel.Find("Tutorial1");
-        StartButton = tutorial1.Find("StartButton").GetComponent<Button>();
-        StartButtonText = StartButton.gameObject.GetComponentInChildren<TMP_Text>();
-        TMP_Text TutText = tutorial1.Find("Text").GetComponent<TMP_Text>();
-
-        tutorial1.gameObject.SetActive(true);
-
-        TutNotReady();
+        tut_startButtonSet = false;
+        SwitchPanel("Tutorial1");
+    }
+    public void Tutorial2() {
+        Transform panel = SwitchPanel("Tutorial2");
+        tut_StartButton = panel.Find("StartButton").GetComponent<Button>();
+        tut_StartButtonText = tut_StartButton.gameObject.GetComponentInChildren<TMP_Text>();
+        if (tut_startButtonSet) TutReadyStart();
     }
 
     public void TutNotReady() {
-        StartButton.interactable = false;
-        StartButtonText.text = "Please Wait...";
+        tut_StartButton.interactable = false;
+        tut_StartButtonText.text = "Please Wait...";
     }
     public void TutReadyStart() {
-        StartButton.interactable = true;
-        StartButtonText.text = "Begin Experiment";
+        if (tut_StartButton == null) tut_startButtonSet = true;
+        else {
+            tut_StartButton.interactable = true;
+            tut_StartButtonText.text = "Begin Experiment";
+        }
     }
 }
