@@ -8,7 +8,7 @@ public class SurveyController : MonoBehaviour
     HoldButton submitButton;
     int initializedButtons = 0;
 
-    void Start()
+    void Await()
     {
         submitButton = transform.Find("SubmitButton").GetComponent<HoldButton>();
 
