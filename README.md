@@ -4,7 +4,7 @@
 * On-Call Discord Meetings: Mondays @ 4pm
 * Questions & General Communication Availability: Monday -> Friday, 8am -> 10pm
 
-## Contributions
+## Checkpoint 1 Contributions
 ### Caleb:
 * Created Unity Project
 * Created Office Environment
@@ -22,6 +22,11 @@
 * Wrote methodology & procedure sections of paper
 * Created VR UI prototype sketch
 * Provided LaTex formatting for paper using prior knowledge
+
+## Checkpoint 2 Contributions
+### Caleb:
+### Kylee:
+### Ben:
 
 ## Checkpoints
 * Checkpoint 1 Video (Unlisted): https://youtu.be/dnfNKtVdPlM
