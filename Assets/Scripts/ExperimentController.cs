@@ -12,6 +12,7 @@ public class ExperimentController : MonoBehaviour
 
     enum State {
         TUTORIAL,
+        FIRST_SURVEY,
         SURVEY,
         QUESTION,
     }
@@ -32,10 +33,20 @@ public class ExperimentController : MonoBehaviour
         }
     }
 
+    public void PublishSurvey((string, int)[] results) {
+        currentState = State.FIRST_SURVEY;
+    }
+
     public void SetUIState(ActivityUI activityUI) {
         switch (currentState) {
             case State.TUTORIAL:
                 activityUI.Tutorial();
+                break;
+            case State.FIRST_SURVEY:
+                activityUI.Tutorial3();
+                break;
+            case State.QUESTION:
+                activityUI.Question();
                 break;
         }
     }
@@ -46,7 +57,7 @@ public class ExperimentController : MonoBehaviour
     }
 
     public void BeginExperiment() {
-        currentState = State.SURVEY;
+        currentState = State.QUESTION;
         sceneChanger.ChangeScene(firstRoom);
     }
 
