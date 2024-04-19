@@ -8,7 +8,7 @@ public class SurveyController : MonoBehaviour
     HoldButton submitButton;
     int initializedButtons = 0;
 
-    void Await()
+    void Start()
     {
         submitButton = transform.Find("SubmitButton").GetComponent<HoldButton>();
 
@@ -21,17 +21,13 @@ public class SurveyController : MonoBehaviour
         Init();
     }
 
-    void OnEnable() {
-        Init();
-    }
-
     public void Init() {
         submitButton.interactable = false;
         foreach (SurveyFieldController field in surveyFields)
             field.Init();
     }
 
-    public void incrementButtonStateCount() {
+    public void IncrementButtonStateCount() {
         ++initializedButtons;
         if (initializedButtons == surveyFields.Length) {
             submitButton.interactable = true;
@@ -39,6 +35,11 @@ public class SurveyController : MonoBehaviour
     }
 
     public void PublishState() {
+        if(surveyFields == null || surveyFields.Length == 0) {
+            Debug.LogWarning("Survey fields empty or null!");
+            return;
+        }
+
         (string, int)[] states = new (string, int)[surveyFields.Length];
         int i = 0;
         foreach (SurveyFieldController field in surveyFields)

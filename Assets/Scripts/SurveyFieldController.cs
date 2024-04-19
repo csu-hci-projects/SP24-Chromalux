@@ -31,7 +31,7 @@ public class SurveyFieldController : MonoBehaviour
     }
 
     public void SetState(MoodButton pressed) {
-        if (state == -1) surveyController.incrementButtonStateCount();
+        if (state == -1) surveyController.IncrementButtonStateCount();
         foreach (MoodButton moodButton in moodButtons)
             if (moodButton == pressed) moodButton.SetState(true);
             else moodButton.SetState(false);
