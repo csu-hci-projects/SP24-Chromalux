@@ -45,9 +45,11 @@ public class SurveyController : MonoBehaviour
         foreach (SurveyFieldController field in surveyFields)
             states[i++] = field.GetState();
 
-        foreach (var state in states)
+        foreach (var state in states) // Survey choices printed here
+            
             Debug.Log(state);
-
+        
+        ExperimentController.RecordSurveyResponses(states); // Record survey responses to file using this
         ExperimentController.Instance.PublishSurvey(states);
 
         ActivityUI activityUI = transform.parent.parent.GetComponent<ActivityUI>();

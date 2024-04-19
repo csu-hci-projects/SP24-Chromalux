@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +12,7 @@ public class ExperimentController : MonoBehaviour
     private string firstRoom;
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-    private string subjectFilePath;
+    private static string subjectFilePath;
 
     enum State
     {
@@ -118,6 +119,16 @@ public class ExperimentController : MonoBehaviour
         {
             Debug.LogError("Error writing to file: " + e.Message);
         }
+    }
+
+    public static void RecordSurveyResponses((string,int)[] responses) {
+        foreach (var response in responses) {
+            Debug.Log(response);
+            using (StreamWriter writer = new StreamWriter(subjectFilePath, true))
+            {
+                writer.WriteLine(response);
+            }
+        }    
     }
 
     void Update()
