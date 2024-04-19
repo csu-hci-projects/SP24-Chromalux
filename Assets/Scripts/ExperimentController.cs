@@ -46,10 +46,6 @@ public class ExperimentController : MonoBehaviour
         currentState = State.FIRST_SURVEY;
     }
 
-    public void PublishSurvey((string, int)[] results) {
-        currentState = State.FIRST_SURVEY;
-    }
-
     public void SetUIState(ActivityUI activityUI)
     {
         switch (currentState)
