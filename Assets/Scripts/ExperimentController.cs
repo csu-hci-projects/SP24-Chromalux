@@ -41,9 +41,11 @@ public class ExperimentController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        Init();
     }
 
-    public void PublishSurvey((string, int)[] results) {
+    public void FinishSurvey((string, int)[] results) {
+        RecordSurveyResponses(results);
         currentState = State.FIRST_SURVEY;
     }
 
@@ -76,7 +78,7 @@ public class ExperimentController : MonoBehaviour
         sceneChanger.ChangeScene(firstRoom);
     }
 
-    public void RecordNameAndRoom(string name, string room)
+    private void RecordNameAndRoom(string name, string room)
     {
         string folderPath = Path.Combine(desktopPath, "Chromalux - Subject Records");
         if (!Directory.Exists(folderPath))
@@ -121,7 +123,7 @@ public class ExperimentController : MonoBehaviour
         }
     }
 
-    public static void RecordSurveyResponses((string,int)[] responses) {
+    private void RecordSurveyResponses((string,int)[] responses) {
         foreach (var response in responses) {
             Debug.Log(response);
             using (StreamWriter writer = new StreamWriter(subjectFilePath, true))

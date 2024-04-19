@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class SetupUIController : MonoBehaviour
 {
     public Button StartButton;
-    public ExperimentController controller;
 
     private string username = null;
     private string room = null;
@@ -24,7 +23,7 @@ public class SetupUIController : MonoBehaviour
     }
 
     public void FinishSetup () {
-        controller.FinishSetup(username, room);
+        ExperimentController.Instance.FinishSetup(username, room);
         gameObject.SetActive(false);
     }
     private void UpdateButton() {
