@@ -10,9 +10,11 @@ public class ExperimentController : MonoBehaviour
     public static ExperimentController Instance { get; private set; }
     private bool setupComplete;
     private string firstRoom;
+    private string currentRoom;
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-    private static string subjectFilePath;
+    private static string subjectEmotionSurveyFilePath;
+    private static string subjectStroopTestFilePath;
 
     enum State
     {
@@ -44,7 +46,8 @@ public class ExperimentController : MonoBehaviour
         Init();
     }
 
-    public void FinishSurvey((string, int)[] results) {
+    public void FinishSurvey((string, int)[] results)
+    {
         RecordSurveyResponses(results);
         currentState = State.FIRST_SURVEY;
     }
@@ -68,33 +71,41 @@ public class ExperimentController : MonoBehaviour
     public void FinishSetup(string name, string room)
     {
         firstRoom = room;
+        currentRoom = room;
         setupComplete = true;
         subjectName = name;
-        RecordNameAndRoom(subjectName, room);
+        FileSetup(subjectName);
     }
 
-    public void BeginExperiment() {
+    public void BeginExperiment()
+    {
         currentState = State.QUESTION;
         sceneChanger.ChangeScene(firstRoom);
     }
 
-    private void RecordNameAndRoom(string name, string room)
+    private void FileSetup(string name)
     {
         string folderPath = Path.Combine(desktopPath, "Chromalux - Subject Records");
+        string currentDateAndTime = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+        string stroopFilePath = Path.Combine(folderPath, name + "_STROOP_" + currentDateAndTime + ".txt");
+        string surveyFilePath = Path.Combine(folderPath, name + "_SURVEY_" + currentDateAndTime + ".txt");
+
         if (!Directory.Exists(folderPath))
         {
             Directory.CreateDirectory(folderPath);
         }
 
-        string currentDateAndTime = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-        string filePath = Path.Combine(folderPath, name + "_" + currentDateAndTime + ".txt");
-        string subjectInfo = name + ", " + room + "\n";
+        subjectEmotionSurveyFilePath = surveyFilePath;
+        subjectStroopTestFilePath = stroopFilePath;
 
-        subjectFilePath = filePath;
-
-        using (StreamWriter writer = new StreamWriter(subjectFilePath, true))
+        using (StreamWriter writerOne = new StreamWriter(subjectEmotionSurveyFilePath, true))
         {
-            writer.Write(subjectInfo);
+            writerOne.WriteLine("Subject; Room; Emotion; Rating");
+        }
+
+        using (StreamWriter writerTwo = new StreamWriter(subjectStroopTestFilePath, true))
+        {
+            writerTwo.WriteLine("Subject; Room; Start Time; Finish Time; Total Time; Correctness");
         }
     }
 
@@ -108,11 +119,17 @@ public class ExperimentController : MonoBehaviour
         string formattedEndTime = endTime.ToString("HH:mm:ss");
         string formattedTotalTime = totalTime.ToString(@"hh\:mm\:ss");
 
-        string writeData = "S: " + formattedStartTime + "| F: " + formattedEndTime + "| Total: " + formattedTotalTime + " : " + (passed ? "PASS" : "FAIL");
+        string writeData =
+            subjectName + ";" +
+            currentRoom + ";" +
+            formattedStartTime + ";" +
+            formattedEndTime + ";" +
+            formattedTotalTime + ";" +
+            (passed ? "PASS" : "FAIL");
 
         try
         {
-            using (StreamWriter writer = new StreamWriter(subjectFilePath, true))
+            using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true))
             {
                 writer.WriteLine(writeData);
             }
@@ -123,14 +140,18 @@ public class ExperimentController : MonoBehaviour
         }
     }
 
-    private void RecordSurveyResponses((string,int)[] responses) {
-        foreach (var response in responses) {
+    private void RecordSurveyResponses((string, int)[] responses)
+    // Subject; Room; Emotion; Response
+    {
+        foreach (var response in responses)
+        {
             Debug.Log(response);
-            using (StreamWriter writer = new StreamWriter(subjectFilePath, true))
+            string line = subjectName + ";" + currentRoom + ";" + response.Item1 + ";" + response.Item2;
+            using (StreamWriter writer = new StreamWriter(subjectEmotionSurveyFilePath, true))
             {
-                writer.WriteLine(response);
+                writer.WriteLine(line);
             }
-        }    
+        }
     }
 
     void Update()
@@ -142,6 +163,15 @@ public class ExperimentController : MonoBehaviour
                 Debug.Log("Swapping scenes...");
                 sceneChanger.ChangeScene(SceneManager.GetActiveScene().name == "Office" ? "Forest" : "Office");
             }
+        }
+
+        // Test stroop data recording function
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            currentRoom = "Test Room";
+            Debug.Log("Recording Stroop Data.....");
+            RecordTaskData(199999999, 9182309182391, true);
+            currentRoom = null;
         }
     }
 }
