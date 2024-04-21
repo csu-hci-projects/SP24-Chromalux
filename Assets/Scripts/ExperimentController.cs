@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,11 +12,12 @@ public class ExperimentController : MonoBehaviour
     private string firstRoom;
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-    private string subjectFilePath;
+    private static string subjectFilePath;
 
     enum State
     {
         TUTORIAL,
+        FIRST_SURVEY,
         SURVEY,
         QUESTION,
     }
@@ -39,6 +41,12 @@ public class ExperimentController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        Init();
+    }
+
+    public void FinishSurvey((string, int)[] results) {
+        RecordSurveyResponses(results);
+        currentState = State.FIRST_SURVEY;
     }
 
     public void SetUIState(ActivityUI activityUI)
@@ -47,6 +55,12 @@ public class ExperimentController : MonoBehaviour
         {
             case State.TUTORIAL:
                 activityUI.Tutorial();
+                break;
+            case State.FIRST_SURVEY:
+                activityUI.Tutorial3();
+                break;
+            case State.QUESTION:
+                activityUI.Question();
                 break;
         }
     }
@@ -59,13 +73,12 @@ public class ExperimentController : MonoBehaviour
         RecordNameAndRoom(subjectName, room);
     }
 
-    public void BeginExperiment()
-    {
-        currentState = State.SURVEY;
+    public void BeginExperiment() {
+        currentState = State.QUESTION;
         sceneChanger.ChangeScene(firstRoom);
     }
 
-    public void RecordNameAndRoom(string name, string room)
+    private void RecordNameAndRoom(string name, string room)
     {
         string folderPath = Path.Combine(desktopPath, "Chromalux - Subject Records");
         if (!Directory.Exists(folderPath))
@@ -108,6 +121,16 @@ public class ExperimentController : MonoBehaviour
         {
             Debug.LogError("Error writing to file: " + e.Message);
         }
+    }
+
+    private void RecordSurveyResponses((string,int)[] responses) {
+        foreach (var response in responses) {
+            Debug.Log(response);
+            using (StreamWriter writer = new StreamWriter(subjectFilePath, true))
+            {
+                writer.WriteLine(response);
+            }
+        }    
     }
 
     void Update()

@@ -45,11 +45,13 @@ public class ActivityUI : MonoBehaviour
     }
     public void Tutorial2() {
         Transform panel = SwitchPanel("Tutorial2");
+    }
+    public void Tutorial3() {
+        Transform panel = SwitchPanel("Tutorial3");
         tut_StartButton = panel.Find("StartButton").GetComponent<Button>();
         tut_StartButtonText = tut_StartButton.gameObject.GetComponentInChildren<TMP_Text>();
         if (tut_startButtonSet) TutReadyStart();
     }
-
     public void TutNotReady() {
         tut_StartButton.interactable = false;
         tut_StartButtonText.text = "Please Wait...";
@@ -60,5 +62,11 @@ public class ActivityUI : MonoBehaviour
             tut_StartButton.interactable = true;
             tut_StartButtonText.text = "Begin Experiment";
         }
+    }
+    public void Survey() {
+        Transform panel = SwitchPanel("Survey");
+    }
+    public void Question() {
+        SwitchPanel("Question");
     }
 }

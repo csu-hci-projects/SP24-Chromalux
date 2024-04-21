@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -55,19 +55,3 @@ public class HoldButton : Button, IPointerDownHandler, IPointerUpHandler, IPoint
         if (down != 0) onClick.Invoke();
     }
 }
-
-/*
-namespace Editor {
-    [CustomEditor(typeof(HoldButton))]
-        public class MyButtonEditor : ButtonEditor {
-        public override void OnInspectorGUI()
-        {
-            HoldButton component = (HoldButton)target;
-        
- 
-            component.bar = (GameObject)EditorGUILayout.ObjectField("Bar Object", component.bar, typeof(GameObject), true);
-            base.OnInspectorGUI();
-        }
-    }
-}
-*/
