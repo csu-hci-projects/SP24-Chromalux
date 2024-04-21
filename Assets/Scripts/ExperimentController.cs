@@ -13,6 +13,7 @@ public class ExperimentController : MonoBehaviour
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
     private static string subjectFilePath;
+    private int envNumber;
 
     enum State
     {
@@ -27,6 +28,7 @@ public class ExperimentController : MonoBehaviour
     {
         currentState = State.TUTORIAL;
         setupComplete = false;
+        envNumber = 0;
     }
 
     void Awake()
@@ -60,7 +62,7 @@ public class ExperimentController : MonoBehaviour
                 activityUI.Tutorial3();
                 break;
             case State.QUESTION:
-                activityUI.Question();
+                activityUI.Question(envNumber);
                 break;
         }
     }
