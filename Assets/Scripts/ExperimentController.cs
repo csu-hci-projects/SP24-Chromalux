@@ -105,12 +105,13 @@ public class ExperimentController : MonoBehaviour
 
         using (StreamWriter writerTwo = new StreamWriter(subjectStroopTestFilePath, true))
         {
-            writerTwo.WriteLine("Subject; Room; Start Time; Finish Time; Total Time; Correctness");
+            writerTwo.WriteLine("Subject; Room; Completion Time; Correctness");
         }
     }
 
-    public void RecordTaskData(long start, long end, bool passed)
+    public void RecordTaskData(float completionTime, bool passed)
     {
+        /*
         TimeSpan totalTime = TimeSpan.FromMilliseconds(end - start);
         DateTime startTime = DateTimeOffset.FromUnixTimeMilliseconds(start).LocalDateTime;
         DateTime endTime = DateTimeOffset.FromUnixTimeMilliseconds(end).LocalDateTime;
@@ -126,7 +127,13 @@ public class ExperimentController : MonoBehaviour
             formattedEndTime + ";" +
             formattedTotalTime + ";" +
             (passed ? "PASS" : "FAIL");
+        */
 
+        string writeData =
+            subjectName + ";" +
+            currentRoom + ";" +
+            completionTime + ";" +
+            (passed ? "PASS" : "FAIL");
         try
         {
             using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true))
@@ -170,7 +177,7 @@ public class ExperimentController : MonoBehaviour
         {
             currentRoom = "Test Room";
             Debug.Log("Recording Stroop Data.....");
-            RecordTaskData(199999999, 9182309182391, true);
+            RecordTaskData(4.20f, false);
             currentRoom = null;
         }
     }
