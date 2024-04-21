@@ -66,7 +66,10 @@ public class ActivityUI : MonoBehaviour
     public void Survey() {
         Transform panel = SwitchPanel("Survey");
     }
-    public void Question() {
-        SwitchPanel("Question");
+    public void Question(int envNumber) {
+        string[] labels = { "first", "second", "third", "fourth", "fifth", "sixth" };
+        var panel = SwitchPanel("QuestionIntro");
+        string welcome = "Welcome to the " + labels[envNumber] + " testing environment!";
+        panel.Find("Welcome").GetComponent<TMP_Text>().text = welcome;
     }
 }
