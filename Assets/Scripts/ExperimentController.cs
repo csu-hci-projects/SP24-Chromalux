@@ -10,10 +10,8 @@ public class ExperimentController : MonoBehaviour
     public static ExperimentController Instance { get; private set; }
     private bool setupComplete;
     private string firstRoom;
-    private string currentRoom;
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-    private static string subjectFilePath;
     private static string subjectEmotionSurveyFilePath;
     private static string subjectStroopTestFilePath;
     private int envNumber;
@@ -74,7 +72,6 @@ public class ExperimentController : MonoBehaviour
     public void FinishSetup(string name, string room)
     {
         firstRoom = room;
-        currentRoom = room;
         setupComplete = true;
         subjectName = name;
         FileSetup(subjectName);
@@ -103,12 +100,12 @@ public class ExperimentController : MonoBehaviour
 
         using (StreamWriter writerOne = new StreamWriter(subjectEmotionSurveyFilePath, true))
         {
-            writerOne.WriteLine("Subject; Room; Emotion; Rating");
+            writerOne.WriteLine("Subject; Group; Environment Number; Emotion; Rating");
         }
 
         using (StreamWriter writerTwo = new StreamWriter(subjectStroopTestFilePath, true))
         {
-            writerTwo.WriteLine("Subject; Room; Completion Time; Correctness");
+            writerTwo.WriteLine("Subject; Group; Environment Number; Completion Time; Correctness");
         }
     }
 
@@ -125,7 +122,7 @@ public class ExperimentController : MonoBehaviour
 
         string writeData =
             subjectName + ";" +
-            currentRoom + ";" +
+            envNumber + ";" +
             formattedStartTime + ";" +
             formattedEndTime + ";" +
             formattedTotalTime + ";" +
@@ -134,7 +131,8 @@ public class ExperimentController : MonoBehaviour
 
         string writeData =
             subjectName + ";" +
-            currentRoom + ";" +
+            firstRoom + ";" +
+            envNumber + ";" +
             completionTime + ";" +
             (passed ? "PASS" : "FAIL");
         try
@@ -156,7 +154,12 @@ public class ExperimentController : MonoBehaviour
         foreach (var response in responses)
         {
             Debug.Log(response);
-            string line = subjectName + ";" + currentRoom + ";" + response.Item1 + ";" + response.Item2;
+            string line = 
+                subjectName + ";" + 
+                firstRoom + ";" +
+                envNumber + ";" + 
+                response.Item1 + ";" + 
+                response.Item2;
             using (StreamWriter writer = new StreamWriter(subjectEmotionSurveyFilePath, true))
             {
                 writer.WriteLine(line);
@@ -178,10 +181,10 @@ public class ExperimentController : MonoBehaviour
         // Test stroop data recording function
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            currentRoom = "Test Room";
+            firstRoom = "Test Room";
             Debug.Log("Recording Stroop Data.....");
             RecordTaskData(4.20f, false);
-            currentRoom = null;
+            firstRoom = null;
         }
     }
 }
