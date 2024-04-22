@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 
 public class ActivityUI : MonoBehaviour
 {
@@ -36,40 +37,34 @@ public class ActivityUI : MonoBehaviour
         return panel;
     }
 
-    private Button tut_StartButton;
-    private TMP_Text tut_StartButtonText;
-    private bool tut_startButtonSet;
     public void Tutorial() {
-        tut_startButtonSet = false;
         SwitchPanel("Tutorial1");
     }
     public void Tutorial2() {
-        Transform panel = SwitchPanel("Tutorial2");
+        SwitchPanel("Tutorial2");
     }
     public void Tutorial3() {
-        Transform panel = SwitchPanel("Tutorial3");
-        tut_StartButton = panel.Find("StartButton").GetComponent<Button>();
-        tut_StartButtonText = tut_StartButton.gameObject.GetComponentInChildren<TMP_Text>();
-        if (tut_startButtonSet) TutReadyStart();
-    }
-    public void TutNotReady() {
-        tut_StartButton.interactable = false;
-        tut_StartButtonText.text = "Please Wait...";
-    }
-    public void TutReadyStart() {
-        if (tut_StartButton == null) tut_startButtonSet = true;
-        else {
-            tut_StartButton.interactable = true;
-            tut_StartButtonText.text = "Begin Experiment";
-        }
+        SwitchPanel("Tutorial3");
     }
     public void Survey() {
-        Transform panel = SwitchPanel("Survey");
+        SwitchPanel("Survey");
     }
-    public void Question(int envNumber) {
-        string[] labels = { "first", "second", "third", "fourth", "fifth", "sixth" };
-        var panel = SwitchPanel("QuestionIntro");
-        string welcome = "Welcome to the " + labels[envNumber] + " testing environment!";
-        panel.Find("Welcome").GetComponent<TMP_Text>().text = welcome;
+    public void QuestionIntro(int envNumber) {
+        if (envNumber == 0) {
+            SwitchPanel("FirstQuestionIntro");
+        } else {
+            var panel = SwitchPanel("QuestionIntro");
+            if (envNumber > 0) {
+                string[] labels = { "second", "third", "fourth", "fifth", "sixth" };
+                string welcome = "Welcome to the " + labels[envNumber-1] + " testing environment!";
+                panel.Find("Welcome").GetComponent<TMP_Text>().text = welcome;
+            } else {
+                panel.Find("Welcome").GetComponent<TMP_Text>().text = "";
+            }
+        }
+    }
+    public void PracticeQuestion() {
+        var panel = SwitchPanel("PracticeQuestion");
+        panel.GetComponent<PracticeQuestionController>().Init();
     }
 }

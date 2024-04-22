@@ -52,6 +52,7 @@ public class HoldButton : Button, IPointerDownHandler, IPointerUpHandler, IPoint
             barRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, delta / HOLDTIME * width);
             yield return null;
         }
+        barRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0);
         if (down != 0) onClick.Invoke();
     }
 }

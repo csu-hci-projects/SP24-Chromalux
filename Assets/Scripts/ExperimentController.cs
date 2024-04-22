@@ -8,7 +8,8 @@ public class ExperimentController : MonoBehaviour
 {
     public SceneChanger sceneChanger;
     public static ExperimentController Instance { get; private set; }
-    private bool setupComplete;
+    public bool setupComplete { get; private set; }
+
     private string firstRoom;
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -62,7 +63,7 @@ public class ExperimentController : MonoBehaviour
                 activityUI.Tutorial3();
                 break;
             case State.QUESTION:
-                activityUI.Question(envNumber);
+                activityUI.QuestionIntro(envNumber);
                 break;
         }
     }
