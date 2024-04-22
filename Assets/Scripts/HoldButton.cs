@@ -1,8 +1,4 @@
-using System;
 using System.Collections;
-using Unity.VisualScripting;
-using UnityEditor;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -52,7 +48,9 @@ public class HoldButton : Button, IPointerDownHandler, IPointerUpHandler, IPoint
             barRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, delta / HOLDTIME * width);
             yield return null;
         }
-        barRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0);
         if (down != 0) onClick.Invoke();
+        barRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0);
+        hover = false;
+        down = 0;
     }
 }
