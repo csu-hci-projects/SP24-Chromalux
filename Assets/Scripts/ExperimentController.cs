@@ -154,12 +154,6 @@ public class ExperimentController : MonoBehaviour
         FileSetup(subjectName);
     }
 
-    public void BeginExperiment()
-    {
-        currentState = State.QUESTION;
-        sceneChanger.ChangeScene(firstRoom);
-    }
-
     private void FileSetup(string name)
     {
         string folderPath = Path.Combine(desktopPath, "Chromalux - Subject Records");
@@ -224,27 +218,6 @@ public class ExperimentController : MonoBehaviour
             {
                 writer.WriteLine(line);
             }
-        }
-    }
-
-    void Update()
-    {
-        if (currentState != State.TUTORIAL)
-        {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                Debug.Log("Swapping scenes...");
-                sceneChanger.ChangeScene(SceneManager.GetActiveScene().name == "Office" ? "Forest" : "Office");
-            }
-        }
-
-        // Test stroop data recording function
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            firstRoom = "Test Room";
-            Debug.Log("Recording Stroop Data.....");
-            RecordTaskData(4.20f, false, true);
-            firstRoom = null;
         }
     }
 }
