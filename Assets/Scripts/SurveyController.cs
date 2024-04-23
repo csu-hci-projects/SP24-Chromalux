@@ -1,16 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class SurveyController : MonoBehaviour
+public class SurveyController : UIPanel
 {
     SurveyFieldController[] surveyFields;
     HoldButton submitButton;
-    int initializedButtons = 0;
+    TMP_Text submitButtonText;
+    int initializedButtons;
+    bool readyProcedureComplete;
+    bool started = false; // dirty hack
 
     void Start()
     {
+        if (started) return;
+
+        started = true;
+
         submitButton = transform.Find("SubmitButton").GetComponent<HoldButton>();
+        submitButtonText = submitButton.transform.Find("Text").GetComponent<TMP_Text>();
 
         Transform Fields = transform.Find("Fields");
         surveyFields = new SurveyFieldController[Fields.childCount];
@@ -21,20 +30,47 @@ public class SurveyController : MonoBehaviour
         Init();
     }
 
-    public void Init() {
+    public override void Init() {
+        if (!started) Start();
+
+        initializedButtons = 0;
         submitButton.interactable = false;
         foreach (SurveyFieldController field in surveyFields)
             field.Init();
+        readyProcedureComplete = false;
+        UpdateSubmitButtonState();
+    }
+
+    // handle setting the button interactable if the setup completes while survey is open
+    public void Update() {
+        if (!readyProcedureComplete && ExperimentController.Instance.setupComplete) {
+            UpdateSubmitButtonState();
+        }
+    }
+
+    public void UpdateSubmitButtonState() {
+        submitButtonText.text = "Submit";
+        if (initializedButtons >= surveyFields.Length) {
+            if (ExperimentController.Instance.setupComplete == true) {
+                submitButton.interactable = true;
+                readyProcedureComplete = true;
+            } else {
+                submitButtonText.text = "Please Wait...";
+                submitButton.interactable = false;
+            }
+        } else {
+            submitButton.interactable = false;
+        }
     }
 
     public void IncrementButtonStateCount() {
         ++initializedButtons;
-        if (initializedButtons == surveyFields.Length) {
-            submitButton.interactable = true;
-        }
+        UpdateSubmitButtonState();
     }
 
     public void PublishState() {
+        submitButton.interactable = false;
+
         if(surveyFields == null || surveyFields.Length == 0) {
             Debug.LogWarning("Survey fields empty or null!");
             return;
@@ -47,7 +83,6 @@ public class SurveyController : MonoBehaviour
 
         ExperimentController.Instance.FinishSurvey(states);
 
-        ActivityUI activityUI = transform.parent.parent.GetComponent<ActivityUI>();
         ExperimentController.Instance.SetUIState(activityUI);
     }
 }

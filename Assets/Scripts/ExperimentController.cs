@@ -8,26 +8,38 @@ public class ExperimentController : MonoBehaviour
 {
     public SceneChanger sceneChanger;
     public static ExperimentController Instance { get; private set; }
-    private bool setupComplete;
+    public bool setupComplete { get; private set; }
+
     private string firstRoom;
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+    private static string subjectFilePath;
     private static string subjectEmotionSurveyFilePath;
     private static string subjectStroopTestFilePath;
     private int envNumber;
 
     enum State
     {
-        TUTORIAL,
+        INIT,
+        TUTORIAL1,
+        TUTORIAL2,
+        TUTORIAL3,
         FIRST_SURVEY,
         SURVEY,
-        QUESTION,
+        FIRST_SCENELOAD,
+        SECOND_SCENELOAD,
+        PRACTICE_QUESTION_INTRO,
+        PRACTICE_QUESTIONS,
+        FIRST_QUESTION_INTRO,
+        QUESTION_INTRO,
+        QUESTIONS,
+        END,
     }
     private State currentState;
 
     private void Init()
     {
-        currentState = State.TUTORIAL;
+        currentState = State.INIT;
         setupComplete = false;
         envNumber = 0;
     }
@@ -50,21 +62,86 @@ public class ExperimentController : MonoBehaviour
     public void FinishSurvey((string, int)[] results)
     {
         RecordSurveyResponses(results);
-        currentState = State.FIRST_SURVEY;
+        ++envNumber;
     }
 
+    // advance to the next state
+    // each case is the outgoing state, so rules for setting up EG: TUTORIAL2 should go under case TUTORIAL1
     public void SetUIState(ActivityUI activityUI)
     {
+        UIPanel uiPanel;
         switch (currentState)
         {
-            case State.TUTORIAL:
-                activityUI.Tutorial();
+            case State.INIT:
+                currentState = State.TUTORIAL1;
+                activityUI.SwitchPanel("Tutorial1");
+                break;
+            case State.TUTORIAL1:
+                currentState = State.TUTORIAL2;
+                activityUI.SwitchPanel("Tutorial2");
+                break;
+            case State.TUTORIAL2:
+                currentState = State.FIRST_SURVEY;
+                uiPanel = activityUI.SwitchPanel("Survey");
+                uiPanel.Init();
                 break;
             case State.FIRST_SURVEY:
-                activityUI.Tutorial3();
+                currentState = State.TUTORIAL3;
+                activityUI.SwitchPanel("Tutorial3");
                 break;
-            case State.QUESTION:
-                activityUI.Question(envNumber);
+            case State.TUTORIAL3:
+                currentState = State.FIRST_SCENELOAD;
+                activityUI.Disable(); // prevent double advance during transition
+                sceneChanger.ChangeScene(firstRoom);
+                break;
+            case State.FIRST_SCENELOAD: // called on first scene load to init new ui instance
+                currentState = State.PRACTICE_QUESTION_INTRO;
+                activityUI.QuestionIntro(0);
+                break;
+            case State.PRACTICE_QUESTION_INTRO:
+                currentState = State.PRACTICE_QUESTIONS;
+                uiPanel = activityUI.SwitchPanel("PracticeQuestion");
+                uiPanel.Init();
+                break;
+            case State.PRACTICE_QUESTIONS:
+                currentState = State.FIRST_QUESTION_INTRO;
+                activityUI.QuestionIntro(-1);
+                break;
+            case State.FIRST_QUESTION_INTRO:
+                currentState = State.QUESTIONS;
+                activityUI.SwitchPanel("PracticeQuestion");
+                break;
+            case State.QUESTIONS:
+                currentState = State.SURVEY;
+                activityUI.SwitchPanel("Survey");
+                break;
+            case State.SURVEY: // survey completed
+                if (envNumber > 6) {
+                    // EXPERIMENT OVER!
+                    currentState = State.END;
+                    activityUI.SwitchPanel("End");
+                    return;
+                } else if (envNumber == 4) {
+                    currentState = State.SECOND_SCENELOAD;
+                    activityUI.Disable(); // prevent double advance during transition
+                    if (firstRoom == "Office") sceneChanger.ChangeScene("Forest");
+                    else sceneChanger.ChangeScene("Office");
+                    return;
+                }
+
+                // trigger environment change here
+
+                currentState = State.QUESTION_INTRO;
+                activityUI.QuestionIntro(envNumber);
+                break;
+            case State.QUESTION_INTRO:
+                currentState = State.QUESTIONS;
+                uiPanel = activityUI.SwitchPanel("PracticeQuestion");
+                uiPanel.Init();
+                break;
+            case State.SECOND_SCENELOAD: // called on second scene load to init new ui instance
+                currentState = State.QUESTION_INTRO;
+                activityUI.QuestionIntro(envNumber);
                 break;
         }
     }
