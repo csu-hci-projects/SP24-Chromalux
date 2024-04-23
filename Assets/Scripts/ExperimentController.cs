@@ -166,7 +166,7 @@ public class ExperimentController : MonoBehaviour
         {
             firstRoom = "Test Room";
             Debug.Log("Recording Stroop Data.....");
-            RecordTaskData(4.20f, false);
+            RecordTaskData(4.20f, false, true);
             firstRoom = null;
         }
     }
