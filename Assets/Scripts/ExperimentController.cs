@@ -13,7 +13,7 @@ public class ExperimentController : MonoBehaviour
     private string firstRoom;
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-    private static string subjectFilePath;
+    //private static string subjectFilePath;
     private static string subjectEmotionSurveyFilePath;
     private static string subjectStroopTestFilePath;
     private int envNumber;
@@ -65,6 +65,7 @@ public class ExperimentController : MonoBehaviour
         ++envNumber;
     }
     public void RecordTaskData(float completionTime, bool passed, bool congruent) {
+        // Subject; Group; Environment Number; Completion Time; Correctness; Congruency
         string writeData =
             subjectName + ";" +
             firstRoom + ";" +
@@ -73,13 +74,13 @@ public class ExperimentController : MonoBehaviour
             (passed ? "PASS" : "FAIL") + ";" +
             (congruent ? "Congruent" : "Incongruent");
         Debug.Log(writeData);
-        //try {
-        //    using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true)) {
-        //        writer.WriteLine(writeData);
-        //    }
-        //} catch (Exception e) {
-        //    Debug.LogError("Error writing to file: " + e.Message);
-        //}
+        try {
+            using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true)) {
+                writer.WriteLine(writeData);
+            }
+        } catch (Exception e) {
+            Debug.LogError("Error writing to file: " + e.Message);
+        }
     }
 
     // advance to the next state
@@ -198,7 +199,7 @@ public class ExperimentController : MonoBehaviour
     }
 
     private void RecordSurveyResponses((string, int)[] responses)
-    // Subject; Room; Emotion; Response
+    // Subject; Group; Environment Number; Emotion; Rating
     {
         foreach (var response in responses)
         {
