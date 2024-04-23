@@ -71,7 +71,7 @@ public class ExperimentController : MonoBehaviour
             envNumber + ";" +
             completionTime + ";" +
             (passed ? "PASS" : "FAIL") + ";" +
-            congruent;
+            (congruent ? "Congruent" : "Incongruent");
         Debug.Log(writeData);
         //try {
         //    using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true)) {
@@ -194,28 +194,6 @@ public class ExperimentController : MonoBehaviour
         using (StreamWriter writerTwo = new StreamWriter(subjectStroopTestFilePath, true))
         {
             writerTwo.WriteLine("Subject; Group; Environment Number; Completion Time; Correctness; Congruency");
-        }
-    }
-
-    public void RecordTaskData(float completionTime, bool passed, bool congruent)
-    {
-        string writeData =
-            subjectName + ";" +
-            firstRoom + ";" +
-            envNumber + ";" +
-            completionTime + ";" +
-            (passed ? "PASS" : "FAIL") + ";" +
-            congruent;
-        try
-        {
-            using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true))
-            {
-                writer.WriteLine(writeData);
-            }
-        }
-        catch (Exception e)
-        {
-            Debug.LogError("Error writing to file: " + e.Message);
         }
     }
 
