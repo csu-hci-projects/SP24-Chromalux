@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class PracticeQuestionController : MonoBehaviour
+public class PracticeQuestionController : UIPanel
 {
     public enum COLOR {
         RED,
@@ -31,7 +31,6 @@ public class PracticeQuestionController : MonoBehaviour
     protected ColorButton[] buttons = new ColorButton[5];
     protected TMP_Text question;
     protected HoldButton continueButton;
-    protected ActivityUI activityUI;
 
     protected int questionNumber = 0;
 
@@ -42,9 +41,14 @@ public class PracticeQuestionController : MonoBehaviour
         (COLOR.BLUE,COLOR.BROWN),
     };
 
+    private bool woke = false; // dirty hack
+
     void Awake()
     {
-        activityUI = transform.parent.parent.GetComponent<ActivityUI>();
+        if (woke) return;
+
+        woke = true;
+
         continueButton = transform.Find("ContinueButton").GetComponent<HoldButton>();
         question = transform.Find("Question").GetComponent<TMP_Text>();
         foreach (int color in Enum.GetValues(typeof(COLOR))) {
@@ -68,16 +72,18 @@ public class PracticeQuestionController : MonoBehaviour
         return questions[index];
     }
 
-    public void Init() {
+    public override void Init() {
+        if (!woke) Awake();
+
         questionNumber = 0;
         AskQuestion();
     }
 
     public static COLOR colorID(string color) { return (COLOR)Array.IndexOf(colorNames, color); }
 
-    public void AskQuestion() {
-        if (questionNumber >= questions.Length) {
-            activityUI.QuestionIntro(-1);
+    public virtual void AskQuestion() {
+        if (questionNumber >= 1) {//questions.Length) {
+            SetUIState();
             return;
         }
         continueButton.interactable = false;
@@ -86,7 +92,7 @@ public class PracticeQuestionController : MonoBehaviour
         EnableButtons();
     }
         
-    public void SubmitAnswer(COLOR color) {
+    public virtual bool SubmitAnswer(COLOR color) {
         continueButton.interactable = true;
         DisableButtons();
         var correct = buttons[(int)GetQuestion(questionNumber).Item1];
@@ -94,5 +100,6 @@ public class PracticeQuestionController : MonoBehaviour
         chosen.bg.color = colors[(int)COLOR.RED];
         correct.bg.color = colors[(int)COLOR.GREEN];
         ++questionNumber;
+        return true;
     }
 }

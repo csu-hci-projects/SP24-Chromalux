@@ -5,18 +5,23 @@ public class ActivityUI : MonoBehaviour
 {
     private Transform playercamera;
     private Transform basePanel;
+    private Transform activePanel;
 
     // Start is called before the first frame update
     void Start()
     {
         playercamera = transform.parent.Find("Main Camera");
         basePanel = transform.GetChild(0);
+        ClearPanels();
         ExperimentController.Instance.SetUIState(this);
     }
     // Update is called once per frame
     void Update()
     {
         transform.localPosition = transform.parent.InverseTransformPoint(playercamera.position) + new Vector3(0,0,1.3f);
+        if (activePanel != null)
+            if (!activePanel.gameObject.activeSelf)
+                ExperimentController.Instance.SetUIState(this);
     }
 
     private void ClearPanels() {
@@ -24,43 +29,42 @@ public class ActivityUI : MonoBehaviour
             child.gameObject.SetActive(false);
     }
 
-    public Transform SwitchPanel(string panelName) {
+    public UIPanel SwitchPanel(string panelName) {
         Transform panel = basePanel.Find(panelName);
+        UIPanel ret = null;
 
-        ClearPanels();
-        if (panel != null) panel.gameObject.SetActive(true);
+        if (activePanel != null)
+            activePanel.gameObject.SetActive(false);
 
-        return panel;
+        activePanel = panel;
+
+        if (panel != null)
+            ret = panel.GetComponent<UIPanel>();
+
+        if (ret != null)
+            ret.Enable(this);
+
+        return ret;
     }
 
-    public void Tutorial() {
-        SwitchPanel("Tutorial1");
+    // used to lock out ui during scene transitions
+    public void Disable() {
+        basePanel.gameObject.SetActive(false);
     }
-    public void Tutorial2() {
-        SwitchPanel("Tutorial2");
-    }
-    public void Tutorial3() {
-        SwitchPanel("Tutorial3");
-    }
-    public void Survey() {
-        SwitchPanel("Survey");
-    }
+
+    // panel methods called by ExperimentController.SetUIState
     public void QuestionIntro(int envNumber) {
         if (envNumber == 0) {
-            SwitchPanel("FirstQuestionIntro");
+            SwitchPanel("PracticeQuestionIntro");
         } else {
-            var panel = SwitchPanel("QuestionIntro");
-            if (envNumber > 0) {
-                string[] labels = { "second", "third", "fourth", "fifth", "sixth" };
-                string welcome = "Welcome to the " + labels[envNumber-1] + " testing environment!";
+            var panel = SwitchPanel("QuestionIntro").transform;
+            if (envNumber > 1) {
+                string[] labels = { "second", "third", "fourth", "fifth", "final" };
+                string welcome = "Welcome to the " + labels[envNumber-2] + " testing environment!";
                 panel.Find("Welcome").GetComponent<TMP_Text>().text = welcome;
             } else {
                 panel.Find("Welcome").GetComponent<TMP_Text>().text = "";
             }
         }
-    }
-    public void PracticeQuestion() {
-        var panel = SwitchPanel("PracticeQuestion");
-        panel.GetComponent<PracticeQuestionController>().Init();
     }
 }
