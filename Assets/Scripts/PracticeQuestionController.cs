@@ -18,7 +18,7 @@ public class PracticeQuestionController : UIPanel
         new Color32(0xaa, 0x55, 0x00, 0xff),
         new Color32(0x00, 0x99, 0x00, 0xff),
         new Color32(0x00, 0x80, 0xff, 0xff),
-        new Color32(0xa3, 0x49, 0xa4, 0xff),
+        new Color32(0xcb, 0x7e, 0xcc, 0xff),
     };
     protected static string[] colorNames = {
         "Red",
@@ -30,6 +30,7 @@ public class PracticeQuestionController : UIPanel
 
     protected ColorButton[] buttons = new ColorButton[5];
     protected TMP_Text question;
+    protected TMP_Text outOf;
     protected HoldButton continueButton;
 
     protected int questionNumber = 0;
@@ -51,6 +52,7 @@ public class PracticeQuestionController : UIPanel
 
         continueButton = transform.Find("ContinueButton").GetComponent<HoldButton>();
         question = transform.Find("Question").GetComponent<TMP_Text>();
+        outOf = transform.Find("OutOf").GetComponent<TMP_Text>();
         foreach (int color in Enum.GetValues(typeof(COLOR))) {
             buttons[color] = transform.Find(colorNames[color]).GetComponent<ColorButton>();
         }
@@ -68,9 +70,8 @@ public class PracticeQuestionController : UIPanel
         foreach (var button in buttons) { button.interactable = false; }
     }
 
-    protected virtual (COLOR,COLOR) GetQuestion(int index) {
-        return questions[index];
-    }
+    protected virtual (COLOR,COLOR) GetQuestion(int index) { return questions[index]; }
+    protected virtual int nQuestions() { return questions.Length; }
 
     public override void Init() {
         if (!woke) Awake();
@@ -82,13 +83,14 @@ public class PracticeQuestionController : UIPanel
     public static COLOR colorID(string color) { return (COLOR)Array.IndexOf(colorNames, color); }
 
     public virtual void AskQuestion() {
-        if (questionNumber >= 1) {//questions.Length) {
+        if (questionNumber >= nQuestions()) {
             SetUIState();
             return;
         }
         continueButton.interactable = false;
         question.color = colors[(int)GetQuestion(questionNumber).Item1];
         question.text = colorNames[(int)GetQuestion(questionNumber).Item2];
+        outOf.text = questionNumber + 1 + "/" + nQuestions();
         EnableButtons();
     }
         
@@ -100,6 +102,7 @@ public class PracticeQuestionController : UIPanel
         chosen.bg.color = colors[(int)COLOR.RED];
         correct.bg.color = colors[(int)COLOR.GREEN];
         ++questionNumber;
-        return true;
+
+        return chosen == correct;
     }
 }

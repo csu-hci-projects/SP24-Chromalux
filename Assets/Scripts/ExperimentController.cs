@@ -64,6 +64,23 @@ public class ExperimentController : MonoBehaviour
         RecordSurveyResponses(results);
         ++envNumber;
     }
+    public void RecordTaskData(float completionTime, bool passed, bool congruent) {
+        string writeData =
+            subjectName + ";" +
+            firstRoom + ";" +
+            envNumber + ";" +
+            completionTime + ";" +
+            (passed ? "PASS" : "FAIL") + ";" +
+            congruent;
+        Debug.Log(writeData);
+        //try {
+        //    using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true)) {
+        //        writer.WriteLine(writeData);
+        //    }
+        //} catch (Exception e) {
+        //    Debug.LogError("Error writing to file: " + e.Message);
+        //}
+    }
 
     // advance to the next state
     // each case is the outgoing state, so rules for setting up EG: TUTORIAL2 should go under case TUTORIAL1
@@ -109,7 +126,7 @@ public class ExperimentController : MonoBehaviour
                 break;
             case State.FIRST_QUESTION_INTRO:
                 currentState = State.QUESTIONS;
-                activityUI.SwitchPanel("PracticeQuestion");
+                activityUI.SwitchPanel("Question");
                 break;
             case State.QUESTIONS:
                 currentState = State.SURVEY;
@@ -136,7 +153,7 @@ public class ExperimentController : MonoBehaviour
                 break;
             case State.QUESTION_INTRO:
                 currentState = State.QUESTIONS;
-                uiPanel = activityUI.SwitchPanel("PracticeQuestion");
+                uiPanel = activityUI.SwitchPanel("Question");
                 uiPanel.Init();
                 break;
             case State.SECOND_SCENELOAD: // called on second scene load to init new ui instance
