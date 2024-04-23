@@ -105,36 +105,19 @@ public class ExperimentController : MonoBehaviour
 
         using (StreamWriter writerTwo = new StreamWriter(subjectStroopTestFilePath, true))
         {
-            writerTwo.WriteLine("Subject; Group; Environment Number; Completion Time; Correctness");
+            writerTwo.WriteLine("Subject; Group; Environment Number; Completion Time; Correctness; Congruency");
         }
     }
 
-    public void RecordTaskData(float completionTime, bool passed)
+    public void RecordTaskData(float completionTime, bool passed, bool congruent)
     {
-        /*
-        TimeSpan totalTime = TimeSpan.FromMilliseconds(end - start);
-        DateTime startTime = DateTimeOffset.FromUnixTimeMilliseconds(start).LocalDateTime;
-        DateTime endTime = DateTimeOffset.FromUnixTimeMilliseconds(end).LocalDateTime;
-
-        string formattedStartTime = startTime.ToString("HH:mm:ss");
-        string formattedEndTime = endTime.ToString("HH:mm:ss");
-        string formattedTotalTime = totalTime.ToString(@"hh\:mm\:ss");
-
-        string writeData =
-            subjectName + ";" +
-            envNumber + ";" +
-            formattedStartTime + ";" +
-            formattedEndTime + ";" +
-            formattedTotalTime + ";" +
-            (passed ? "PASS" : "FAIL");
-        */
-
         string writeData =
             subjectName + ";" +
             firstRoom + ";" +
             envNumber + ";" +
             completionTime + ";" +
-            (passed ? "PASS" : "FAIL");
+            (passed ? "PASS" : "FAIL") + ";" +
+            congruent;
         try
         {
             using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true))
