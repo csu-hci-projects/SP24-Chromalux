@@ -15,7 +15,6 @@ public class ExperimentController : MonoBehaviour
     private static string subjectStroopTestFilePath;
     private int envNumber;
     private int consistentEnvNum;
-    private bool sceneLoaded = false;
 
     enum State
     {
