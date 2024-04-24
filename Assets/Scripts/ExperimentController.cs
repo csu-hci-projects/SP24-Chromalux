@@ -1,12 +1,14 @@
 using System;
 using System.IO;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ExperimentController : MonoBehaviour
 {
     public SceneChanger sceneChanger;
+    public LightTransition lightTransition = new LightTransition();
     public static ExperimentController Instance { get; private set; }
     public bool setupComplete { get; private set; }
 
@@ -17,6 +19,7 @@ public class ExperimentController : MonoBehaviour
     private static string subjectEmotionSurveyFilePath;
     private static string subjectStroopTestFilePath;
     private int envNumber;
+    private int consistentEnvNum;
 
     enum State
     {
@@ -42,6 +45,7 @@ public class ExperimentController : MonoBehaviour
         currentState = State.INIT;
         setupComplete = false;
         envNumber = 0;
+        setConsistentEnvNum();
     }
 
     void Awake()
@@ -63,24 +67,7 @@ public class ExperimentController : MonoBehaviour
     {
         RecordSurveyResponses(results);
         ++envNumber;
-    }
-    public void RecordTaskData(float completionTime, bool passed, bool congruent) {
-        // Subject; Group; Environment Number; Completion Time; Correctness; Congruency
-        string writeData =
-            subjectName + ";" +
-            firstRoom + ";" +
-            envNumber + ";" +
-            completionTime + ";" +
-            (passed ? "PASS" : "FAIL") + ";" +
-            (congruent ? "Congruent" : "Incongruent");
-        Debug.Log(writeData);
-        try {
-            using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true)) {
-                writer.WriteLine(writeData);
-            }
-        } catch (Exception e) {
-            Debug.LogError("Error writing to file: " + e.Message);
-        }
+        setConsistentEnvNum();
     }
 
     // advance to the next state
@@ -198,6 +185,25 @@ public class ExperimentController : MonoBehaviour
         }
     }
 
+    public void RecordStroopData(float completionTime, bool passed, bool congruent) {
+        // Subject; Group; Environment Number; Completion Time; Correctness; Congruency
+        string writeData =
+            subjectName + ";" +
+            firstRoom + ";" +
+            consistentEnvNum + ";" +
+            completionTime + ";" +
+            (passed ? "PASS" : "FAIL") + ";" +
+            (congruent ? "Congruent" : "Incongruent");
+        Debug.Log(writeData);
+        try {
+            using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true)) {
+                writer.WriteLine(writeData);
+            }
+        } catch (Exception e) {
+            Debug.LogError("Error writing to file: " + e.Message);
+        }
+    }
+
     private void RecordSurveyResponses((string, int)[] responses)
     // Subject; Group; Environment Number; Emotion; Rating
     {
@@ -207,13 +213,23 @@ public class ExperimentController : MonoBehaviour
             string line = 
                 subjectName + ";" + 
                 firstRoom + ";" +
-                envNumber + ";" + 
+                consistentEnvNum + ";" + 
                 response.Item1 + ";" + 
                 response.Item2;
             using (StreamWriter writer = new StreamWriter(subjectEmotionSurveyFilePath, true))
             {
                 writer.WriteLine(line);
             }
+        }
+    }
+
+    private void setConsistentEnvNum() {
+        if (envNumber == 0) {
+            consistentEnvNum = 0;
+        } else if (firstRoom == "Office") {
+            consistentEnvNum = envNumber;
+        } else {
+            consistentEnvNum = 7 - envNumber;
         }
     }
 }

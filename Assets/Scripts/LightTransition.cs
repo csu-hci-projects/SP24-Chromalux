@@ -49,7 +49,7 @@ public class LightTransition : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            StartTransition();
+            StartColorTransition();
         }
 
         if (startColor != targetColor)
@@ -74,7 +74,8 @@ public class LightTransition : MonoBehaviour
         }
     }
 
-    void StartTransition()
+    // vvvvv CALL THIS TO CHANGE COLORS vvvvv
+    public void StartColorTransition()
     {
         currentIndex = (currentIndex + 1) % colors.Length;
         startColor = lightsInGroup[0].color;

@@ -49,7 +49,7 @@ public class QuestionController : PracticeQuestionController
         bool congruent = question.Item1 == question.Item2;
         bool correct = base.SubmitAnswer(color);
 
-        ExperimentController.Instance.RecordTaskData(elapsed, correct, congruent);
+        ExperimentController.Instance.RecordStroopData(elapsed, correct, congruent);
 
         return true;
     }
