@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.handzlikchris.fastscriptreload": {
-      "version": "https://github.com/handzlikchris/FastScriptReload.git?path=Assets",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "42a3a100f456dfcfbd7084a2333801b94101731d"
-    },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
       "depth": 0,
