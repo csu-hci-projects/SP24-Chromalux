@@ -1,10 +1,6 @@
 using System;
 using System.IO;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Dependencies.NCalc;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ExperimentController : MonoBehaviour
 {
