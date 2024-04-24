@@ -8,7 +8,7 @@ public class LightTransition : MonoBehaviour
     public float transitionDuration = 1f;
 
     private Light[] lightsInGroup;
-    private int currentIndex = 0;
+    private int currentColorIndex = 0;
     private Color startColor;
     private Color targetColor;
     private Color startEmissionColor;
@@ -35,13 +35,13 @@ public class LightTransition : MonoBehaviour
 
         foreach (Light light in lightsInGroup)
         {
-            light.color = colors[currentIndex];
+            light.color = colors[currentColorIndex];
         }
 
         if (lightMaterial != null)
         {
-            lightMaterial.color = colors[currentIndex];
-            lightMaterial.SetColor("_EmissionColor", colors[currentIndex]);
+            lightMaterial.color = colors[currentColorIndex];
+            lightMaterial.SetColor("_EmissionColor", colors[currentColorIndex]);
         }
     }
 
@@ -77,15 +77,15 @@ public class LightTransition : MonoBehaviour
     // vvvvv CALL THIS TO CHANGE COLORS vvvvv
     public void StartColorTransition()
     {
-        currentIndex = (currentIndex + 1) % colors.Length;
+        currentColorIndex = (currentColorIndex + 1) % colors.Length;
         startColor = lightsInGroup[0].color;
-        targetColor = colors[currentIndex];
+        targetColor = colors[currentColorIndex];
         startTime = Time.time;
 
         if (lightMaterial != null)
         {
             startEmissionColor = lightMaterial.GetColor("_EmissionColor");
-            targetEmissionColor = colors[currentIndex];
+            targetEmissionColor = colors[currentColorIndex];
         }
     }
 }

@@ -7,7 +7,7 @@ public class HoldButton : Button, IPointerDownHandler, IPointerUpHandler, IPoint
 {
     private bool hover = false;
     private float down = 0;
-    private const float HOLDTIME = 0.6f;
+    private const float HOLDTIME = 0.0f;
     private float width;
     private RectTransform barRect;
 

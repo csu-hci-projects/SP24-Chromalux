@@ -2,24 +2,24 @@ using System;
 using System.IO;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ExperimentController : MonoBehaviour
 {
     public SceneChanger sceneChanger;
-    public LightTransition lightTransition = new LightTransition();
     public static ExperimentController Instance { get; private set; }
     public bool setupComplete { get; private set; }
 
     private string firstRoom;
     private string subjectName;
     private string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-    //private static string subjectFilePath;
     private static string subjectEmotionSurveyFilePath;
     private static string subjectStroopTestFilePath;
     private int envNumber;
     private int consistentEnvNum;
+    private bool sceneLoaded = false;
 
     enum State
     {
@@ -95,11 +95,13 @@ public class ExperimentController : MonoBehaviour
                 activityUI.SwitchPanel("Tutorial3");
                 break;
             case State.TUTORIAL3:
+                SetColorArrayStartingIndex();
                 currentState = State.FIRST_SCENELOAD;
                 activityUI.Disable(); // prevent double advance during transition
                 sceneChanger.ChangeScene(firstRoom);
                 break;
             case State.FIRST_SCENELOAD: // called on first scene load to init new ui instance
+                LightRefresh();
                 currentState = State.PRACTICE_QUESTION_INTRO;
                 activityUI.QuestionIntro(0);
                 break;
@@ -121,12 +123,15 @@ public class ExperimentController : MonoBehaviour
                 activityUI.SwitchPanel("Survey");
                 break;
             case State.SURVEY: // survey completed
-                if (envNumber > 6) {
+                if (envNumber > 6)
+                {
                     // EXPERIMENT OVER!
                     currentState = State.END;
                     activityUI.SwitchPanel("End");
                     return;
-                } else if (envNumber == 4) {
+                }
+                else if (envNumber == 4)
+                {
                     currentState = State.SECOND_SCENELOAD;
                     activityUI.Disable(); // prevent double advance during transition
                     if (firstRoom == "Office") sceneChanger.ChangeScene("Forest");
@@ -135,9 +140,10 @@ public class ExperimentController : MonoBehaviour
                 }
 
                 // trigger environment change here
-
                 currentState = State.QUESTION_INTRO;
                 activityUI.QuestionIntro(envNumber);
+                LightRefresh();
+                StartColorTransition();
                 break;
             case State.QUESTION_INTRO:
                 currentState = State.QUESTIONS;
@@ -147,6 +153,8 @@ public class ExperimentController : MonoBehaviour
             case State.SECOND_SCENELOAD: // called on second scene load to init new ui instance
                 currentState = State.QUESTION_INTRO;
                 activityUI.QuestionIntro(envNumber);
+                LightRefresh();
+                StartColorTransition();
                 break;
         }
     }
@@ -185,7 +193,8 @@ public class ExperimentController : MonoBehaviour
         }
     }
 
-    public void RecordStroopData(float completionTime, bool passed, bool congruent) {
+    public void RecordStroopData(float completionTime, bool passed, bool congruent)
+    {
         // Subject; Group; Environment Number; Completion Time; Correctness; Congruency
         string writeData =
             subjectName + ";" +
@@ -195,11 +204,15 @@ public class ExperimentController : MonoBehaviour
             (passed ? "PASS" : "FAIL") + ";" +
             (congruent ? "Congruent" : "Incongruent");
         Debug.Log(writeData);
-        try {
-            using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true)) {
+        try
+        {
+            using (StreamWriter writer = new StreamWriter(subjectStroopTestFilePath, true))
+            {
                 writer.WriteLine(writeData);
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             Debug.LogError("Error writing to file: " + e.Message);
         }
     }
@@ -210,11 +223,11 @@ public class ExperimentController : MonoBehaviour
         foreach (var response in responses)
         {
             Debug.Log(response);
-            string line = 
-                subjectName + ";" + 
+            string line =
+                subjectName + ";" +
                 firstRoom + ";" +
-                consistentEnvNum + ";" + 
-                response.Item1 + ";" + 
+                consistentEnvNum + ";" +
+                response.Item1 + ";" +
                 response.Item2;
             using (StreamWriter writer = new StreamWriter(subjectEmotionSurveyFilePath, true))
             {
@@ -223,13 +236,122 @@ public class ExperimentController : MonoBehaviour
         }
     }
 
-    private void setConsistentEnvNum() {
-        if (envNumber == 0) {
+    private void setConsistentEnvNum()
+    {
+        if (envNumber == 0)
+        {
             consistentEnvNum = 0;
-        } else if (firstRoom == "Office") {
+        }
+        else if (firstRoom == "Office")
+        {
             consistentEnvNum = envNumber;
-        } else {
+        }
+        else
+        {
             consistentEnvNum = 7 - envNumber;
         }
     }
+
+    // Color Changing (yes this is ugly, sorry)---------------------------------------------
+
+    // LightTransition Variables -----------------------------------
+    public Material lightMaterial;
+    public Color[] colors = new Color[] { Color.red, Color.green, Color.blue };
+    public float transitionDuration = 1f;
+
+    private Light[] lightsInScene;
+    private int currentColorIndex = 0;
+    private Color startColor;
+    private Color targetColor;
+    private Color startEmissionColor;
+    private Color targetEmissionColor;
+    private float startTime;
+
+    // Methods---------------------------------------------
+    void LightRefresh()
+    {
+        lightsInScene = GameObject.FindObjectsOfType<Light>();
+
+        if (lightsInScene.Length == 0 || colors.Length == 0)
+        {
+            Debug.LogError("No lights in group OR no colors defined");
+            enabled = false;
+            return;
+        }
+
+        foreach (Light light in lightsInScene)
+        {
+            Console.Out.WriteLine(light.name);
+            light.color = colors[currentColorIndex];
+        }
+
+        if (lightMaterial != null)
+        {
+            lightMaterial.color = colors[currentColorIndex];
+            lightMaterial.SetColor("_EmissionColor", colors[currentColorIndex]);
+        }
+    }
+
+    void Update()
+    {
+        if (startColor != targetColor)
+        {
+            float t = (Time.time - startTime) / transitionDuration;
+            foreach (Light light in lightsInScene)
+            {
+                light.color = Color.Lerp(startColor, targetColor, t);
+            }
+
+            if (lightMaterial != null)
+            {
+                Color lerpedEmissionColor = Color.Lerp(startEmissionColor, targetEmissionColor, t);
+                lightMaterial.SetColor("_EmissionColor", lerpedEmissionColor);
+            }
+
+            if (t >= 1f)
+            {
+                startColor = targetColor;
+                startEmissionColor = targetEmissionColor;
+            }
+        }
+    }
+
+    // vvvvv CALL THIS TO CHANGE COLORS vvvvv
+    public void StartColorTransition()
+    {
+        lightsInScene = GameObject.FindObjectsOfType<Light>();
+
+        if (firstRoom == "Office")
+        {
+            currentColorIndex = (currentColorIndex + 1) % colors.Length;
+        }
+        else
+        {
+            currentColorIndex = (currentColorIndex - 1 + colors.Length) % colors.Length;
+        }
+
+        startColor = lightsInScene[0].color;
+        targetColor = colors[currentColorIndex];
+        startTime = Time.time;
+
+        if (lightMaterial != null)
+        {
+            startEmissionColor = lightMaterial.GetColor("_EmissionColor");
+            targetEmissionColor = colors[currentColorIndex];
+        }
+    }
+
+    private void SetColorArrayStartingIndex()
+    {
+        if (firstRoom == "Forest")
+        {
+            currentColorIndex = colors.Length - 1;
+        }
+        else
+        {
+            currentColorIndex = 0;
+        }
+    }
+
+
 }
