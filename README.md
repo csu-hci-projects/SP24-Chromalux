@@ -1,5 +1,8 @@
 # SP24-Chromalux
 
+## Experiment Release Version
+* https://drive.google.com/file/d/1plhiKgUMJeegLNtmtVZJc-gEML7eosPv/view?usp=sharing
+
 ## Meeting Details
 * On-Call Discord Meetings: Mondays @ 4pm
 * Questions & General Communication Availability: Monday -> Friday, 8am -> 10pm
