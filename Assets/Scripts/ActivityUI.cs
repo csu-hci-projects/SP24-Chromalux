@@ -18,7 +18,7 @@ public class ActivityUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localPosition = transform.parent.InverseTransformPoint(playercamera.position) + new Vector3(0,0,1.3f);
+        transform.localPosition = transform.parent.InverseTransformPoint(playercamera.position) + new Vector3(0,0,1.4f);
         if (activePanel != null)
             if (!activePanel.gameObject.activeSelf)
                 ExperimentController.Instance.SetUIState(this);
