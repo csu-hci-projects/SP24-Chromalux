@@ -62,7 +62,8 @@ public class PracticeQuestionController : UIPanel
     private void EnableButtons() {
         foreach (var button in buttons) {
             button.interactable = true;
-            button.bg.color = Color.white;
+            var c = button.colors.normalColor;
+            button.bg.color = new Color(c.r,c.g, c.b,.5f);
             button.Init();
         }
     }
